@@ -68,7 +68,7 @@ const BentoBox: React.FC = () => {
 
           {/* Leadership */}
           <div className="lg:col-span-2 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-            <div className="pt-6 px-6 pb-4 sm:pt-10 sm:px-10 sm:pb-6">
+            <div className="p-6 sm:p-10">
               <Leadership />
             </div>
           </div>
