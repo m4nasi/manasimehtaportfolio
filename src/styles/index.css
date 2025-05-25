@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Keyframes Animations */
+@keyframes bg-pan {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Animation Classes */
+.animate-bg-pan {
+  animation: bg-pan 60s linear infinite; /* Adjust duration for desired speed */
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Global Resets */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll from wider elements */
+  /* cursor: none; */ /* Removed to unhide the cursor */
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 12px; /* Adjust size */
+  height: 12px;
+  background-color: teal; /* Change to your desired color */
+  border-radius: 50%; /* Makes it a circle */
+  pointer-events: none; /* Prevents the cursor from interfering with clicks */
+  z-index: 9999; /* Ensures it stays on top */
+  transform: translate(-50%, -50%); /* Centers the circle on the pointer */
+}
