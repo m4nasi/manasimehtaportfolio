@@ -70,88 +70,85 @@ const Leadership: React.FC = () => {
 
   return (
     <div className="h-full">
-      {/* Header */}
-      <div className="flex items-center mb-8">
-        <div className="bg-gradient-to-r from-blue-100 to-teal-100 p-3 rounded-xl mr-4 flex-shrink-0">
-          <span className="text-teal-600 text-2xl">💼</span> {/* Briefcase emoji */}
-        </div>
-        <h2 className="text-3xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600 text-transparent">
-          Professional Experience
-        </h2>
-      </div>
-
-      {/* Experience Timeline */}
-      <div className="space-y-8 relative flex-grow">
-        {/* Timeline bar */}
-        <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-200 to-purple-200"></div>
-
-        {experienceData.map((exp) => (
-          <div key={exp.id} className="pl-12">
-            {/* Timeline dot */}
-            <div className="absolute left-0 top-1 h-4 w-4 rounded-full bg-white border-4 border-teal-500 group-hover:bg-teal-100 transition-all duration-300 z-10"></div>
-
-            {/* Experience Card */}
-            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 group-hover:border-teal-200 transition-all duration-300">
-            <div className="max-w-prose flex-grow">
-                <div className="flex justify-between items-start mb-2">
-                <div>
-                    <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
-                    <p className="text-teal-600 font-medium">{exp.company}</p>
-                    {exp.location && <p className="text-gray-500 text-sm mt-1">{exp.location}</p>}
-                </div>
-                <span className="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full flex-shrink-0 ml-4">
-                    {exp.duration}
-                </span>
-                </div>
-
-                {exp.roleType && exp.roleType !== "Individual Contributor" && (
-                <span className="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full mt-3 inline-block">
-                    {exp.roleType}
-                </span>
-                )}
-
-                {/* General Contributions */}
-                {exp.contributions && exp.contributions.length > 0 && (
-                <div className="mt-4">
-                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                    Key Contributions
-                    </h4>
-                    <ul className="space-y-2">
-                    {exp.contributions.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                        <span className="text-teal-500 mr-2">•</span>
-                        <span className="text-gray-700">{item}</span>
-                        </li>
-                    ))}
-                    </ul>
-                </div>
-                )}
-
-                {/* Leadership Highlights - Distinct Section */}
-                {exp.leadershipHighlights && exp.leadershipHighlights.length > 0 && (
-                <div className="mt-4 pt-4 border-t border-gray-200">
-                    <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2 flex items-center">
-                    <span className="text-xl mr-2">🌟</span> Leadership Impact
-                    </h4>
-                    <ul className="space-y-2">
-                    {exp.leadershipHighlights.map((highlight, i) => (
-                        <li
-                        key={i}
-                        className="flex items-start last:pb-2"
-                        >
-                        <span className="text-purple-500 mr-2">✓</span>
-                        <span className="text-gray-800 font-medium">{highlight}</span>
-                        </li>
-                    ))}
-                    </ul>
-                </div>
-                )} 
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+  {/* Header */}
+  <div className="flex items-center mb-8">
+    <div className="bg-gradient-to-r from-blue-100 to-teal-100 p-3 rounded-xl mr-4 flex-shrink-0">
+      <span className="text-teal-600 text-2xl">💼</span> {/* Briefcase emoji */}
     </div>
+    <h2 className="text-3xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600 text-transparent">
+      Professional Experience
+    </h2>
+  </div>
+
+  {/* Experience Timeline */}
+  <div className="space-y-8 relative flex-grow">
+    {/* Timeline bar */}
+    <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-200 to-purple-200"></div>
+
+    {experienceData.map((exp) => (
+      <div key={exp.id} className="pl-12">
+        {/* Timeline dot */}
+        <div className="absolute left-0 top-1 h-4 w-4 rounded-full bg-white border-4 border-teal-500 group-hover:bg-teal-100 transition-all duration-300 z-10"></div>
+
+        {/* Experience Card */}
+        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 group-hover:border-teal-200 transition-all duration-300">
+          <div className="flex-grow">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
+                <p className="text-teal-600 font-medium">{exp.company}</p>
+                {exp.location && <p className="text-gray-500 text-sm mt-1">{exp.location}</p>}
+              </div>
+              <span className="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full flex-shrink-0 ml-4">
+                {exp.duration}
+              </span>
+            </div>
+
+            {exp.roleType && exp.roleType !== "Individual Contributor" && (
+              <span className="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full mt-3 inline-block">
+                {exp.roleType}
+              </span>
+            )}
+
+            {/* General Contributions */}
+            {exp.contributions && exp.contributions.length > 0 && (
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                  Key Contributions
+                </h4>
+                <ul className="space-y-2">
+                  {exp.contributions.map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-teal-500 mr-2">•</span>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Leadership Highlights - Distinct Section */}
+            {exp.leadershipHighlights && exp.leadershipHighlights.length > 0 && (
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2 flex items-center">
+                  <span className="text-xl mr-2">🌟</span> Leadership Impact
+                </h4>
+                <ul className="space-y-2">
+                  {exp.leadershipHighlights.map((highlight, i) => (
+                    <li key={i} className="flex items-start last:pb-2">
+                      <span className="text-purple-500 mr-2">✓</span>
+                      <span className="text-gray-800 font-medium">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
   );
 };
 
