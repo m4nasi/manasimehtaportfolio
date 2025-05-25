@@ -6,7 +6,7 @@ const Experience = () => {
       id: 1,
       role: 'FutureMaker and Founder',
       company: 'Standard Chartered x Itify',
-      duration: 'AUGUST 2023 - PRESENT',
+      duration: 'August 2023 - Present',
       description: [
         'Pitched and secured £2000 funding for an AI-focused entrepreneurial venture, overseeing business development and operations. Spearheaded the creation of innovative software solutions. ',
         'Engineered an AI app using Flutter and website with React, JavaScript, and PHP with a 92% accuracy. ',
@@ -30,7 +30,7 @@ const Experience = () => {
       id: 3,
       role: 'Software Engineering Team Lead',
       company: 'University of Nottingham',
-      duration: 'OCTOBER 2023 – MAY 2024',
+      duration: 'October 2023 – May 2024',
       description: [
         'Directed a cross-functional team of 8 in delivering a React browser-based interactive whiteboard, ensuring timely project completion through effective coordination of weekly stand-ups and task allocation.',
         'Spearheaded back-end development using JavaScript and Supabase API within ScrumBan workflows, achieving a 25% reduction in bug reports through test-driven development and pair programming.',

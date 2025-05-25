@@ -26,7 +26,7 @@ const Education = () => {
         { name: "CNN-LSTM-AE Anomaly Detection Model with Large Language Model Driven Sentiment Analysis for Automated Trading", languages:"Python, JavaScript", duration: "September 2024 - May 2025" },
         { name: "Evaluation of A2C, PPO and DQN for Automated Trading", languages:"Python", duration: "April 2024 - August 2024" },
         { name: "Breast Cancer PCR and RFS Release Machine Learning predictor ", languages:"Python", duration: "October 2023 - March 2024" },
-        { name: "ScribbleSphere: Infinate Whiteboard", languages: "JavaScript", duration: "Obtober 2023 - March 2024" },
+        { name: "ScribbleSphere: Infinate Whiteboard", languages: "JavaScript", duration: "October 2023 - March 2024" },
         { name: "Concurrent Process Scheduler Simulation", languages:"C", duration: "January 2023 - June 2023" },
         { name: "TCP/IP Dijkstra’s Graphing Server ", languages:"C", duration: "September 2022 - December 2022" },
         { name: "HyFlex-Compatible UAV Animal Feeding Problem Solver", languages:"Java", duration: "September 2022 - December 2022" },
