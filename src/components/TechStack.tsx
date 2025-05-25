@@ -1,7 +1,4 @@
 import React from 'react';
-// If you're using react-icons, you could import specific icons for each tech:
-// import { FaPython, FaJs, FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt } from 'react-icons/fa';
-// import { SiTypescript, SiTailwindcss, SiPostgresql, SiMysql, SiFlask, SiDjango, SiMongodb, SiVite } from 'react-icons/si';
 
 // Helper to get a placeholder icon/color (replace with actual icon logic)
 const getSkillIcon = (skillName: string) => {
@@ -14,7 +11,6 @@ const getSkillIcon = (skillName: string) => {
     case 'vite': return { icon: '🚀', color: 'text-cyan-500 bg-cyan-100' };
     case 'tailwindcss': return { icon: '🌬️', color: 'text-cyan-500 bg-cyan-100' };
     case 'postgresql': return { icon: '🐘', color: 'text-blue-700 bg-blue-100' };
-    case 'pythonflaskdjango': return { icon: '🐘', color: 'text-blue-700 bg-blue-100' };
     case 'mysql': return { icon: '🐬', color: 'text-blue-700 bg-blue-100' };
     case 'django':
     case 'flask': return { icon: '✨', color: 'text-blue-700 bg-blue-100' };
@@ -48,15 +44,15 @@ const TechStack: React.FC = () => {
       skills: ["Flask", "PostgreSQL", "MySQL"],
     },
     {
+      category: "ML & Data Science", // Dedicated ML category
+      icon: "📊",
+      skills: ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy"],
+    },
+    {
       category: "DevOps & Cloud",
       icon: "☁️",
-      skills: ["MLOps", "Git", "CI/CD"], // Added Docker here
+      skills: ["MLOps", "Git", "CI/CD", "Docker"],
     },
-    // {
-    //   category: "Architectures",
-    //   icon: "🧠",
-    //   skills: ["ARM64", "RESTful APIs"],
-    // },
   ];
 
   return (
@@ -71,16 +67,20 @@ const TechStack: React.FC = () => {
         </h2>
       </div>
 
-      {/* Categories Grid - Dynamic columns based on screen size */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 flex-grow">
+      <p className="text-gray-700 leading-relaxed mb-8">
+    Here's a snapshot of the technologies I wield to build robust, scalable, and intelligent applications.
+    I'm always keen to explore new tools and deepen my expertise.
+  </p>
+
+      {/* Dynamic List */}
+      <div className="space-y-6">
         {techCategories.map((categoryData, categoryIndex) => (
           <div key={categoryIndex}>
             <h3 className="font-semibold text-lg text-gray-900 mb-4 flex items-center">
               <span className="text-xl mr-2">{categoryData.icon}</span>
               {categoryData.category}
             </h3>
-            {/* Inner Grid for Skill Badges */}
-            <div className="grid grid-cols-2 gap-2"> {/* Uses a 2-column grid for skills within each category */}
+            <div className="flex flex-wrap gap-2">
               {categoryData.skills.map((skill, skillIndex) => {
                 const { icon, color } = getSkillIcon(skill); // Get dynamic icon and color
                 return (

@@ -6,6 +6,8 @@ import Education from './Education';
 // import Introduction from './Introduction';
 import TechStack from './TechStack';
 import Projects from './Projects';
+import Leadership from './Leadership';
+import CurrentlyLearning from './CurrentlyLearning'
 // import { FaUser, FaGraduationCap, FaLaptopCode } from 'react-icons/fa';
 
 const BentoBox: React.FC = () => {
@@ -63,11 +65,27 @@ const BentoBox: React.FC = () => {
               <Projects />
             </div>
           </div>
+
+          {/* Leadership */}
+          <div className="lg:col-span-2 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+            <div className="pt-6 px-6 pb-4 sm:pt-10 sm:px-10 sm:pb-6">
+              <Leadership />
+            </div>
+          </div>
           
-          {/* Tech Stack */}
-          <div className="bg-white lg:col-span-3 rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-            <div className="p-8 sm:p-10 h-full flex flex-col">
-              <TechStack />
+          <div className="lg:col-span-1 h-full grid gap-6"> {/* The 'gap-6' controls space BETWEEN the two boxes */}
+            {/* Currently Learning Box - Second row in this column */}
+            <div id="currently-learning-section" className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+              <div className="p-8 sm:p-10 h-full flex flex-col">
+                <CurrentlyLearning />
+              </div>
+            </div>
+            
+            {/* Tech Stack Box - First row in this column */}
+            <div id="tech-stack-section" className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+              <div className="p-8 sm:p-10 h-full flex flex-col">
+                <TechStack />
+              </div>
             </div>
           </div>
 

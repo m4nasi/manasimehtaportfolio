@@ -28,25 +28,24 @@ const Experience = () => {
     },
     {
       id: 3,
-      role: 'FutureMaker and Founder',
-      company: 'Standard Chartered x Itify',
-      duration: 'AUGUST 2023 - PRESENT',
+      role: 'Software Engineering Team Lead',
+      company: 'University of Nottingham',
+      duration: 'OCTOBER 2023 – MAY 2024',
       description: [
-        'Pitched and secured £2000 funding for an AI-focused entrepreneurial venture, overseeing business development and operations. Spearheaded the creation of innovative software solutions. ',
-        'Engineered an AI app using Flutter and website with React, JavaScript, and PHP with a 92% accuracy. ',
+        'Directed a cross-functional team of 8 in delivering a React browser-based interactive whiteboard, ensuring timely project completion through effective coordination of weekly stand-ups and task allocation.',
+        'Spearheaded back-end development using JavaScript and Supabase API within ScrumBan workflows, achieving a 25% reduction in bug reports through test-driven development and pair programming.',
+        'Engineered an AI app using Flutter and website with React, JavaScript, and PHP with a 92% accuracy.',
       ],
     //   icon: <FaBriefcase className="text-teal-600" /> // Ensure className is passed correctly
     },
     {
       id: 4,
-      role: 'Software Engineering Intern',
-      company: 'BlackRock',
+      role: 'Code For Good Software Engineer Hackathon',
+      company: 'J.P Morgan',
       duration: 'June - August 2024',
       description: [
-        'Enhanced BlackRock’s flagship Aladdin OS with AI-driven features for an application serving 500,000 global users, working as a Full Stack Developer with Java, Angular, and concurrent API endpoints. ',
-        'Employed a Perl script for effective server management, maintaining a stable development environment.',
-        'Improved UX/UI design to boost 25% user engagement, for an intuitive and efficient user experience. ',
-        'Designed user interfaces using Java Swing and had 80% coverage unit testing with Mockito. '
+        'Lead front-end developer and Git admin for a team of 6 working with the Creativators charity to develop an online booking system utilising Bootstrap, React and JavaScript in a 24-hour hackathon.',
+        'Developed a Python AI chatbot using NLTK and TensorFlow achieving 90% accuracy rate in responses.',
       ],
     //   icon: <FaCodeBranch className="text-teal-600" /> // Ensure className is passed correctly
     }

@@ -19,7 +19,10 @@ const Education = () => {
         { name: "Breast Cancer PCR and RFS Release Machine Learning predictor ", languages:"Python", duration: "October 2023 - March 2024" },
         { name: "ScribbleSphere: Infinate Whiteboard", languages: "JavaScript", duration: "Obtober 2023 - March 2024" },
         { name: "Concurrent Process Scheduler Simulation", languages:"C", duration: "January 2023 - June 2023" },
-        { name: "TCP/IP Dijkstra’s Graphing Server ", languages:"C", duration: "September 2022 - December 2022" }
+        { name: "TCP/IP Dijkstra’s Graphing Server ", languages:"C", duration: "September 2022 - December 2022" },
+        { name: "HyFlex-Compatible UAV Animal Feeding Problem Solver", languages:"Java", duration: "September 2022 - December 2022" },
+        { name: "ARM64-Based Text Editor with Memory Management", languages:"ARM64", duration: "September 2022 - December 2022" },
+        { name: "CPU Arithmetic Data Logic Unit (ALU)", languages:"HDL", duration: "September 2022 - December 2022" }
       ]
     },
     // {

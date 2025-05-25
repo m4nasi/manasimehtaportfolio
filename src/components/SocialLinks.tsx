@@ -29,7 +29,7 @@ const SocialLinks: React.FC = () => {
             {/* GitHub Logo (replace with your actual SVG or img) */}
             {/* Note: GitHub logo is usually dark, so we'll make it dark gray and lighten/teal it on hover */}
             <svg
-              className="w-15 h-15 fill-current text-gray-700 group-hover:text-teal-600 transition-colors duration-200"
+              className="w-10 h-10 fill-current text-gray-700 group-hover:text-teal-600 transition-colors duration-200"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -51,7 +51,7 @@ const SocialLinks: React.FC = () => {
             {/* LinkedIn Logo (replace with your actual SVG or img) */}
             {/* Note: LinkedIn's official color is blue, but we're adapting to teal/white */}
             <svg
-              className="w-15 h-15 fill-current text-gray-700 group-hover:text-teal-600 transition-colors duration-200"
+              className="w-10 h-10 fill-current text-gray-700 group-hover:text-teal-600 transition-colors duration-200"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
