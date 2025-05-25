@@ -48,6 +48,16 @@ const Experience = () => {
         'Developed a Python AI chatbot using NLTK and TensorFlow achieving 90% accuracy rate in responses.',
       ],
     //   icon: <FaCodeBranch className="text-teal-600" /> // Ensure className is passed correctly
+    },
+    {
+      id: 5,
+      role: 'Software Development Engineer Spring Intern',
+      company: 'Amazon',
+      duration: 'June 2023',
+      description: [  
+        "Championed agile methodologies to facilitate code reviews and paired programming sessions, driving the development of a Java-based role-playing game, that achieved a 4.5 out 5-star rating.",
+        "Employed continuous integration to enhance UI designs, boosting user engagement by 12% and adapting to evolving needs through daily stand-up meetings.",
+      ],
     }
   ];
 

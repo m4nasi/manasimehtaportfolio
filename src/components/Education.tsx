@@ -13,6 +13,15 @@ const Education = () => {
         "Specialised in Machine Learning and Software Engineering",
         "Coursework in Concurrent Systems, Machine Learning and Heuristic Optimisation"
       ],
+      modules: [
+        "Machine Learning",
+        "Software Engineering",
+        "Operating Systems and Concurrency",
+        "Computer Vision",
+        "Artificial Intelligence",
+        "Data Structures and Algorithms",
+        "Computer Networks",
+      ],
       projects: [ // These projects will now have their own sub-timeline
         { name: "CNN-LSTM-AE Anomaly Detection Model with Large Language Model Driven Sentiment Analysis for Automated Trading", languages:"Python, JavaScript", duration: "September 2024 - May 2025" },
         { name: "Evaluation of A2C, PPO and DQN for Automated Trading", languages:"Python", duration: "April 2024 - August 2024" },
@@ -91,6 +100,23 @@ const Education = () => {
                         <li key={i} className="flex items-start">
                           <span className="text-teal-500 mr-2">•</span>
                           <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Modules */}
+                {edu.modules && edu.modules.length > 0 && (
+                  <div className="mt-4">
+                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2 flex items-center">
+                      Key Modules
+                    </h4>
+                    <ul className="space-y-2">
+                      {edu.modules.map((module, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="text-teal-500 mr-2">•</span>
+                          <span className="text-gray-700">{module}</span>
                         </li>
                       ))}
                     </ul>
