@@ -1,4 +1,3 @@
-import React from 'react';
 // import { FaBriefcase, FaCodeBranch } from 'react-icons/fa';
 
 const Experience = () => {

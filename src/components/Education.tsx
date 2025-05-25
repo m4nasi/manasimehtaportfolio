@@ -1,5 +1,3 @@
-import React from 'react';
-// Assuming you have a way to import icons, e.g., from react-icons
 // import { FaGraduationCap, FaBook, FaMicroscope, FaUniversity, FaProjectDiagram } from 'react-icons/fa'; // Added FaProjectDiagram for project icon
 
 const Education = () => {

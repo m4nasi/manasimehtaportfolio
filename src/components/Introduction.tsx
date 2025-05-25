@@ -1,4 +1,3 @@
-import React from 'react';
 // import { FaCode, FaUser, FaLightbulb, FaTools } from 'react-icons/fa';
 // import { MdOutlineDesignServices } from 'react-icons/md';
 
