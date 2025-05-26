@@ -27,7 +27,7 @@ const BentoBox: React.FC = () => {
               Hey, I'm <span className="bg-clip-text bg-gradient-to-r from-teal-600 to-purple-600 text-transparent">Manasi!</span>
             </h1>
             <span className="inline-block bg-teal-100 text-teal-600 px-3 py-1 rounded-full text-sm font-medium mb-4 mt-4 animate-fade-in-up animation-delay-500">
-              👩🏽‍💻Computer Science Graduate | 🖥️ Software Engineer | ⌨️ Java and AI Enthusiast
+              👩🏽‍💻Computer Science Graduate | 🖥️ Software Engineer | ⌨️ Java and AI Enthusiast | 🇬🇧 England
             </span>
             <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
               Crafting digital experiences with clean code and creative solutions
