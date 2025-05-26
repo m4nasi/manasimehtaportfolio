@@ -7,6 +7,7 @@ const CurrentlyLearning: React.FC = () => {
     { name: "Optical Character Recognition (OCR)", icon: "🦀" },
     { name: "React Native", icon: "☸️" },
     { name: "App Development", icon: "📐" },
+    { name: "Three.js", icon: "🖥️" },
   ];
 
   return (

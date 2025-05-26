@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
     {
       id: 4,
       title: "Snake",
-      description: "Designed and developed a multi-level Snake Game using JavaFX, transitioning from Java Swing to enhance UI responsiveness, performance, and overall user experience. •	Applied maintainable software design principles, ensuring a modular, scalable architecture that facilitates easy future updates and feature expansions. Implemented dynamic difficulty progression, introducing escalating speed, obstacles, and challenges to progressively enhance gameplay and player engagement.",
+      description: "Designed and developed a multi-level Snake Game using JavaFX, transitioning from Java Swing to enhance UI responsiveness, performance, and overall user experience. Applied maintainable software design principles, ensuring a modular, scalable architecture that facilitates easy future updates and feature expansions. Implemented dynamic difficulty progression, introducing escalating speed, obstacles, and challenges to progressively enhance gameplay and player engagement.",
       technologies: ["Java", "JavaFX", "Java Swing"],
       image: placeholderImage, // Updated to placeholder
       liveLink: "#",
