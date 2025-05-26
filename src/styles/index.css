@@ -81,6 +81,8 @@ html {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /* --- Animation Classes --- */
 .animate-bg-pan {
   animation: bg-pan 60s linear infinite; /* Adjust duration for desired speed */

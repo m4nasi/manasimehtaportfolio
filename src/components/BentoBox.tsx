@@ -95,7 +95,7 @@ const BentoBox: React.FC = () => {
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16 relative overflow-hidden">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl animate-fade-in-up">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl animate-fade-in-up font-pacifico">
               Hey, I'm <span className="bg-clip-text bg-gradient-to-r from-teal-600 to-purple-600 text-transparent">Manasi!</span>
             </h1>
             <span className="inline-block bg-teal-100 text-teal-600 px-3 py-1 rounded-full text-sm font-medium mb-4 mt-4 animate-fade-in-up animation-delay-500">
