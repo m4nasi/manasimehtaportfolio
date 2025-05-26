@@ -107,7 +107,7 @@ const Leadership: React.FC = () => {
       <span className="text-teal-600 text-2xl">💼</span> {/* Briefcase emoji */}
     </div>
     <h2 className="text-3xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600 text-transparent">
-      Professional Experience
+      Leadership Experience
     </h2>
   </div>
 
