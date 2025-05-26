@@ -22,7 +22,7 @@ const Education = () => {
         "Data Structures and Algorithms",
         "Computer Networks",
       ],
-      projects: [ // These projects will now have their own sub-timeline
+      projects: [ 
         { name: "CNN-LSTM-AE Anomaly Detection Model with Large Language Model Driven Sentiment Analysis for Automated Trading", languages:"Python, JavaScript", duration: "September 2024 - May 2025" },
         { name: "Evaluation of A2C, PPO and DQN for Automated Trading", languages:"Python", duration: "April 2024 - August 2024" },
         { name: "Breast Cancer PCR and RFS Release Machine Learning predictor ", languages:"Python", duration: "October 2023 - March 2024" },
@@ -54,8 +54,6 @@ const Education = () => {
       {/* Header */}
       <div className="flex items-center mb-8">
         <div className="bg-gradient-to-r from-teal-100 to-purple-100 p-3 rounded-xl mr-4 flex-shrink-0">
-          {/* Placeholder for icon, uncomment if using react-icons */}
-          {/* <FaGraduationCap className="text-teal-600 text-2xl" /> */}
           <span className="text-teal-600 text-2xl">🎓</span>
         </div>
         <h2 className="text-3xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-teal-600 to-purple-600 text-transparent">
@@ -123,34 +121,25 @@ const Education = () => {
                   </div>
                 )}
 
-                {/* Projects - Now with its own nested timeline for University entry */}
+                {/* Projects */}
                 {edu.projects && edu.projects.length > 0 && (
-                  <div className="mt-6 border-t border-gray-100 pt-4 relative"> {/* Added relative for nested timeline */}
-                    {/* Nested Timeline Bar */}
+                  <div className="mt-6 border-t border-gray-100 pt-4 relative">
                     <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-200 to-teal-200 ml-5 pt-4"></div> {/* Adjusted position to align with main timeline */}
 
                     <h4 className="text-base font-semibold text-gray-700 uppercase tracking-wider mb-4 pl-12 flex items-center">
-                      {/* <FaProjectDiagram className="mr-2" /> */}
-                      <span className="text-xl mr-2">💡</span> {/* Placeholder for project icon */}
+                      <span className="text-xl mr-2">💡</span>
                       Notable Projects
                     </h4>
-                    <ul className="space-y-4"> {/* Increased space-y for project entries */}
+                    <ul className="space-y-4">
                       {edu.projects.map((project, i) => (
                         <li key={i} className="relative pl-12 group">
-                          {/* Nested Timeline Dot */}
                           <div className="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-white border-2 border-purple-500 group-hover:bg-purple-100 transition-all duration-300 z-10"></div>
-
                           <div className="flex justify-between items-center mb-1">
                             <span className="text-gray-800 font-medium">{project.name}</span>
-                            {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-0.5 rounded-full flex-shrink-0 ml-4">
-                              {project.languages}
-                            </span> */}
                             <span className="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-0.5 rounded-full ml-4 ">
                               {project.languages}
                             </span>
-                            {/* <span className="text-xs text-gray-500 ml-4">{project.languages}</span> */}
                           </div>
-                          {/* Add project description/details here if available */}
                         </li>
                       ))}
                     </ul>

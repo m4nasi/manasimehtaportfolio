@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Helper to get a placeholder icon/color (replace with actual icon logic)
 const getSkillIcon = (skillName: string) => {
   const normalizedName = skillName.toLowerCase();
   switch (normalizedName) {
@@ -44,7 +42,7 @@ const TechStack: React.FC = () => {
       skills: ["Flask", "PostgreSQL", "MySQL"],
     },
     {
-      category: "ML & Data Science", // Dedicated ML category
+      category: "ML & Data Science",
       icon: "📊",
       skills: ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy"],
     },
@@ -82,15 +80,15 @@ const TechStack: React.FC = () => {
             </h3>
             <div className="flex flex-wrap gap-2">
               {categoryData.skills.map((skill, skillIndex) => {
-                const { icon, color } = getSkillIcon(skill); // Get dynamic icon and color
+                const { icon, color } = getSkillIcon(skill); 
                 return (
                   <div
                     key={skillIndex}
                     className={`flex items-center p-2 rounded-lg transition-all duration-200
                                 ${color} hover:shadow-md hover:scale-[1.02]`}
                   >
-                    <span className="text-xl mr-2">{icon}</span> {/* Skill-specific icon */}
-                    <span className="text-sm font-medium text-gray-800">{skill}</span> {/* Skill name */}
+                    <span className="text-xl mr-2">{icon}</span> 
+                    <span className="text-sm font-medium text-gray-800">{skill}</span>
                   </div>
                 );
               })}

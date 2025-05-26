@@ -9,7 +9,7 @@ const RetroNavBar: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
-    }, 1000); // Update time every second
+    }, 1000);
     return () => clearInterval(timer);
   }, []);
 
@@ -19,14 +19,14 @@ const RetroNavBar: React.FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-teal-300 border-b-2 border-purple-500 font-mono text-gray-800 shadow-md p-2 flex items-center justify-between px-4">
-       {/* System Tray (Clock) - Classic recessed effect */}
+       {/* System (Clock)*/}
       <div className="flex-shrink-0 bg-purple-400 text-sm px-3 py-1
                       border-t-2 border-l-2 border-purple-500 border-r-2 border-b-2 border-white
                       shadow-inner rounded-md">
         {formatTime(time)}
       </div>
 
-      {/* Navigation Links - Centered */}
+      {/* Navigation Links */}
       <div className="flex justify-center flex-grow space-x-4 ml-4 mr-4">
         <Link
             to="about-me-section"

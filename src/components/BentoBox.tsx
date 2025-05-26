@@ -1,7 +1,6 @@
 import React from 'react';
-// import Particles from 'react-tsparticles';
 import AboutMe from './AboutMe';
-// import SocialLinks from './SocialLinks'; // Ensure SocialLinks component is correctly imported if you decide to use it elsewhere.
+// import SocialLinks from './SocialLinks';
 import Experience from './Experience';
 import Education from './Education';
 import TechStack from './TechStack';
@@ -110,14 +109,6 @@ const BentoBox: React.FC = () => {
                 <ChessGameBento />
               </div>
             </div> */}
-
-            {/* Social Links (this is now integrated into the new creative footer) */}
-            {/* You can remove or repurpose this old SocialLinks div if it's no longer needed in the main grid */}
-            {/* <div className="bg-white lg:col-span-3 rounded-3xl shadow-xl overflow-hidden">
-              <div className="p-8 sm:p-10">
-                <SocialLinks />
-              </div>
-            </div> */}
           </div>
 
           {/* --- Creative Footer --- */}
@@ -125,12 +116,8 @@ const BentoBox: React.FC = () => {
                              bg-gradient-to-r from-blue-100 to-teal-100 
                              animate-fade-in-up animation-delay-1500 relative overflow-hidden rounded-xl" // Added rounded-xl and overflow-hidden
           >
-
-            <div className="relative z-10"> {/* Content wrapper for z-index */}
-                <p className="text-gray-800 text-2xl font-bold mb-4">
-                  Let's Connect and Build Something Amazing!
-                </p>
-
+            <div className="relative z-10">
+                <p className="text-gray-800 text-2xl font-bold mb-4">Let's Connect and Build Something Amazing!</p>
                 {/* Social Media Icons */}
                 <ul className="flex justify-center space-x-6 mt-4 mb-6">
                     <li>
@@ -185,17 +172,10 @@ const BentoBox: React.FC = () => {
                 <p className="text-gray-500 text-xs">
                   Crafted with <span className="text-red-500">❤️</span>
                 </p>
-                {/* Optional: Add quick links here if needed */}
-                {/* <div className="mt-2 space-x-4">
-                  <a href="/privacy" className="text-gray-500 hover:text-teal-600 text-xs">Privacy Policy</a>
-                  <a href="/terms" className="text-gray-500 hover:text-teal-600 text-xs">Terms of Service</a>
-                </div> */}
             </div>
           </footer>
-          {/* --- End Creative Footer --- */}
-
-        </div> {/* End relative z-10 for content */}
-      </div> {/* End Main BentoBox Container */}
+        </div> 
+      </div> 
     </div>
   );
 };
