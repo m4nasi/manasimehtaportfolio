@@ -17,20 +17,24 @@ const Leadership: React.FC = () => {
   const experienceData: ExperienceEntry[] = [
     {
       id: 1,
-      title: "Head of Marketing and Business", // Example: A leadership title
-      company: "Formula Student:AI Nottingham",
+      title: "Head of Marketing and Business",
+      company: "Formula Student: AI Nottingham", // Keep it concise
       duration: "April 2024 - June 2025",
       location: "Nottingham, UK",
-      roleType: "Head of Marketing and Business", // Explicitly state the role type
+      roleType: "Marketing & Business Lead", // Clearer, more impactful role type
       contributions: [
-        "Spearhead business and marketing endeavours, orchestrating sponsor relationships and meticulously managing budgets to fuel the team's success in the competition.", 
-        "Employ innovative marketing strategies to enhance the team's visibility and attract sponsors and optimize ROI, ensuring maximum exposure and support for the team's endeavours.",
+        // Focus on core responsibilities and strategic actions
+        "Spearheaded all business development and marketing initiatives for the university's autonomous racecar team, enhancing brand visibility and engagement.",
+        "Orchestrated comprehensive sponsor relationships, from outreach and negotiation to ongoing engagement, ensuring sustained financial and resource support.",
+        "Met all financial targets through meticulous budget management, optimizing resource allocation to fuel team operations and competition readiness.",
+        "Implemented innovative digital marketing strategies to maximize team exposure and attract key sponsors, directly influencing ROI."
       ],
       leadershipHighlights: [
-        "Managed a team of 30 engineers, overseeing project assignments and delivery.",
-        "Raiseed £4,000 for the fs:ai to be able to race an autonomous racecar in Silverstone",
-        "Facilitated weekly stand-ups and sprint planning, ensuring agile methodologies were effectively followed.",
-        "Coordinated cross-functional efforts with engineering and business teams to align technical roadmap with business goals."
+        // Focus on quantifiable impact and leadership outcomes
+        "Successfully raised £4,000 for the team, directly enabling the development and racing of an autonomous racecar at Silverstone.",
+        "Directed a cross-functional business team to align marketing efforts with engineering milestones, ensuring cohesive project delivery.",
+        "Significantly enhanced the team's public and corporate image, attracting new partnerships and increasing overall project support.",
+        "Managed all logistical and promotional aspects of public-facing events and sponsor engagements, ensuring professional representation."
       ]
     },
     
@@ -54,16 +58,43 @@ const Leadership: React.FC = () => {
     },
     {
       id: 3,
-      title: "Equity Fund Manager ", // Example: Non-traditional leadership
-      company: "Nottingham Economics and Finance Society",
-      duration: "September 2023 - July 2024",
-      roleType: "Investment Fund Manager",
+      title: "Senior Student Mentor",
+      company: "School of Computer Science, University of Nottingham",
+      duration: "September 2023 - July 2025",
+      roleType: "Senior Mentor", // Keep this explicit leadership type
       contributions: [
-        "Managing a portfolio valued at £2,500 and leading a team of 11 analysts to make alpha. Leverage and demonstrate expertise in investment strategy development, portfolio optimisation and risk management. Adept at navigating dynamic financial markets and adapting strategies.",
+        // This section focuses on your core mentoring and support contributions
+        "Provided personalized academic and career guidance to mentees, helping them navigate university life and professional development.",
+        "Supported the successful transition of first-year students, addressing their queries and fostering a welcoming environment.",
+        "Contributed to the overall mentor program's success by sharing best practices and assisting with mentor training."
       ],
       leadershipHighlights: [
-        "Coordinated a team of 15 analysts to be able to produce alpha in volatile markets",
-        "Performed the largest return NEFS had ever seen"
+        // This section highlights your direct leadership and organizational achievements
+        "Promoted from Mentor to Senior Mentor, recognizing strong leadership and dedication.",
+        "Led and organized all social events for the School of Computer Science, ensuring successful engagement and community building.",
+        "Orchestrated welcome week events for 50-60 new students, facilitating integration into the community.",
+        "Pioneered and managed first-year events, establishing foundational social activities for incoming students.",
+        "Oversaw logistical planning and execution for all allocated events, ensuring smooth operations and positive attendee experiences."
+      ]
+    },
+    {
+      id: 4,
+      title: "Equity Fund Manager",
+      company: "Nottingham Economics and Finance Society (NEFS)", // Clarified full name
+      duration: "September 2023 - July 2024",
+      roleType: "Investment Fund Manager", // Strong and clear role type
+      contributions: [
+        // Focus on responsibilities and expertise
+        "Managed a live equity portfolio valued at £2,500, applying advanced investment strategies to generate significant returns.",
+        "Led and mentored a team of 11 junior analysts, guiding them through market analysis, valuation techniques, and portfolio construction.",
+        "Developed and implemented robust investment strategies, including comprehensive portfolio optimization and risk management frameworks.",
+        "Navigated dynamic financial markets, demonstrating adaptability and informed decision-making in volatile conditions."
+      ],
+      leadershipHighlights: [
+        // Focus on quantifiable impact and leadership outcomes
+        "Achieved the largest return in NEFS history, demonstrating exceptional alpha generation in challenging market conditions.",
+        "Coordinated team efforts to successfully identify and execute high-conviction trades, contributing directly to portfolio outperformance.",
+        "Enhanced team capabilities through structured training and collaborative research, empowering analysts to effectively contribute to investment decisions."
       ]
     }
   ];
