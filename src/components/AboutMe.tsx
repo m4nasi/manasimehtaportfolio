@@ -13,14 +13,14 @@ const AboutMe: React.FC = () => {
 
         {/* Photo Column - Takes full height of its grid cell */}
         <div className="flex justify-center items-center h-full">
-          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg border border-teal-200">
+          <div className="relative w-full h-64 sm:h-80 md:h-full rounded-2xl overflow-hidden shadow-lg border border-teal-200">
             <img
               src={profilePhoto}
               alt="Manasi's Profile"
-              className="absolute inset-0 w-full h-full object-cover object-top" // Image fills its container
+              className="absolute inset-0 w-full h-full object-cover object-center md:object-top" // Adjust object position for larger screens
             />
             {/* Optional: Add a subtle gradient overlay on the image for effect */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
           </div>
         </div>
 
