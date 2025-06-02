@@ -61,7 +61,7 @@ const RetroNavBar: React.FC = () => {
           duration={500}
           onClick={closeMenu}
           className="px-3 py-1 text-sm transition-colors duration-100 ease-in-out
-                    hover:bg-blue-600 hover:text-white rounded-sm
+                    hover:bg-fuchsia-600 hover:text-white rounded-sm
                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer"
         >
           About
@@ -72,7 +72,7 @@ const RetroNavBar: React.FC = () => {
           duration={500}
           onClick={closeMenu}
           className="px-3 py-1 text-sm transition-colors duration-100 ease-in-out
-                    hover:bg-blue-600 hover:text-white rounded-sm
+                    hover:bg-fuchsia-600 hover:text-white rounded-sm
                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer"
         >
           Experience
@@ -83,7 +83,7 @@ const RetroNavBar: React.FC = () => {
           duration={500}
           onClick={closeMenu}
           className="px-3 py-1 text-sm transition-colors duration-100 ease-in-out
-                    hover:bg-blue-600 hover:text-white rounded-sm
+                    hover:bg-fuchsia-600 hover:text-white rounded-sm
                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer"
         >
           Education
@@ -94,7 +94,7 @@ const RetroNavBar: React.FC = () => {
           duration={500}
           onClick={closeMenu}
           className="px-3 py-1 text-sm transition-colors duration-100 ease-in-out
-                    hover:bg-blue-600 hover:text-white rounded-sm
+                    hover:bg-fuchsia-600 hover:text-white rounded-sm
                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer"
         >
           Projects
@@ -105,7 +105,7 @@ const RetroNavBar: React.FC = () => {
           duration={500}
           onClick={closeMenu}
           className="px-3 py-1 text-sm transition-colors duration-100 ease-in-out
-                    hover:bg-blue-600 hover:text-white rounded-sm
+                    hover:bg-fuchsia-600 hover:text-white rounded-sm
                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer"
         >
           Leadership
@@ -116,7 +116,7 @@ const RetroNavBar: React.FC = () => {
           duration={500}
           onClick={closeMenu}
           className="px-3 py-1 text-sm transition-colors duration-100 ease-in-out
-                    hover:bg-blue-600 hover:text-white rounded-sm
+                    hover:bg-fuchsia-600 hover:text-white rounded-sm
                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer"
         >
           Tech Stack
