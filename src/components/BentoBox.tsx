@@ -74,6 +74,7 @@ const BentoBox: React.FC = () => {
               variants={fadeUpBox}
               custom={0.2}
               whileHover={{ scale: 1.02 }}
+              id="experience-section"
             >
               <div className="p-6 sm:p-10">
                 <Experience />
@@ -89,6 +90,7 @@ const BentoBox: React.FC = () => {
               variants={fadeUpBox}
               custom={0.3}
               whileHover={{ scale: 1.02 }}
+              id="education-section"
             >
               <div className="p-8 sm:p-10 h-full flex flex-col">
                 <Education />
@@ -104,6 +106,7 @@ const BentoBox: React.FC = () => {
               variants={fadeUpBox}
               custom={0.4}
               whileHover={{ scale: 1.02 }}
+              id="projects-section"
             >
               <div className="p-6 sm:p-10">
                 <Projects />
@@ -119,6 +122,7 @@ const BentoBox: React.FC = () => {
               variants={fadeUpBox}
               custom={0.5}
               whileHover={{ scale: 1.02 }}
+              id="leadership-section"
             >
               <div className="p-6 sm:p-10">
                 <Leadership />
@@ -160,6 +164,7 @@ const BentoBox: React.FC = () => {
                 className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100"
                 variants={fadeUpBox}
                 whileHover={{ scale: 1.02 }}
+                id='tech-stack-section'
               >
                 <div className="p-8 sm:p-10 flex flex-col">
                   <TechStack />
