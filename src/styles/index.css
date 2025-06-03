@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "ManasiHandwriting";
+  src: url("/font/Manasi-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "ManasiHandwriting";
+  font-size: 5rem; /* Adjusted for better readability */
+}
+
+h2 {
+  font-family: "ManasiHandwriting";
+  font-size: 2.5rem; /* Adjusted for better readability */
+}
 /* --- Custom Scrollbar Styles --- */
 
 /* For WebKit browsers (Chrome, Safari, Edge, Opera) */
